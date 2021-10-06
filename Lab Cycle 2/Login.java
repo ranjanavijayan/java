@@ -20,7 +20,7 @@ class PasswordException  extends Exception
     public void show()  
     {   
       System.out.println("Password Exception Catched:" );
-      System.out.println("Incorrect password is occure: Please enter the currect password");
+      System.out.println("Incorrect password: Please enter the correct password");
           
     }  
 }
@@ -43,7 +43,7 @@ class login
     else if(!p.equals("abcd"))
       throw new PasswordException();
     else
-     System.out.println("Loging Succesfully" );
+     System.out.println("Loging in Succesfully" );
    }
  catch(UsernameException e)
       {
